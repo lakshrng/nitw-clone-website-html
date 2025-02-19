@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIT Warangal - Clone</title>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link href='https://fonts.googleapis.com/css?family=Almendra' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+      color: black;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .header img {
+      width: 900px;
+      height: 200px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #0f0f0f;
+      padding: 10px 0;
+    }
+
+    .navbar .tab {
+      padding: 14px 50px;
+      color: #f2c069;
+      text-decoration: none;
+      font-size: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar .tab:hover {
+      background-color: #575757;
+      color: white;
+    }
+
+    .announcements {
+      background-color: gray;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 400px;
+      margin: 20px auto;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .content-section {
+      display: flex;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .text-section, .image-section {
+        font-size: 30px;
+      width: 50%;
+      padding: 20px;
+    }
+
+    .image-section img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .social-media-buttons {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px;
+      border-radius: 50%;
+      transition: transform 0.3s;
+      display: inline-block;
+    }
+
+    .fa:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="nitw logo.PNG" alt="NIT Warangal Logo">
+  </header>
+
+  <nav class="navbar">
+    <a href="#" class="tab">Institute</a>
+    <a href="#" class="tab">Administration</a>
+    <a href="#" class="tab">Academics</a>
+    <a href="#" class="tab">R&D</a>
+    <a href="#" class="tab">Students</a>
+    <a href="#" class="tab">Alumni</a>
+  </nav>
+
+  <div class="announcements">
+    <marquee>Conclave of NIT Librarians and Publishers - 20th January 2025</marquee>
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="welcome_to_NIT_WARANGAL.jpg" alt="Slide 1"></div>
+      <div class="swiper-slide"><img src="book fair.jpg" alt="Slide 2"></div>
+      <div class="swiper-slide"><img src="dean image.jpg" alt="Slide 3"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="content-section">
+    <div class="text-section">
+      <h2>Director's Message</h2>
+      <img src="nitw clone site/proper dean imagw.jpg" alt="NIT Warangal Campus" width="400" height="400">
+      <p>I am glad that I have been given an opportunity to serve as the Director of National Institute of Technology (NIT) Warangal-the oldest one in the bracket of first 17 NITs. It is an honour and privilege for me to lead this prestigious institute which has a rich history of its distinction in teaching, research and service to the nation. It is the first regional engineering college whose foundation stone has been laid by the former prime minister, Pandit Jawaharlal Nehru in the year 1959. Over a period of more than six decades, NIT Warangal has emerged as one of the leading institutions in engineering and technology. Warangal is the second largest city of the state of Telangana, Hyderabad being the first one which has several places of interest to visit. </p>
+    </div>
+    <div class="image-section">
+      <img src="nirf rank.PNG" alt="NIT Warangal Campus">
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="stats.PNG" alt="NIT Warangal Campus">
+    </div>
+  </div>
+
+  <div class="social-media-buttons">
+    <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
+    <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
+    <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
